@@ -32,10 +32,8 @@
             this.lblAciklama = new System.Windows.Forms.Label();
             this.btnio = new System.Windows.Forms.Button();
             this.nudio = new System.Windows.Forms.NumericUpDown();
-            this.btnYanlis = new System.Windows.Forms.Button();
             this.nudPuanim = new System.Windows.Forms.NumericUpDown();
             this.lblPuanim = new System.Windows.Forms.Label();
-            this.btnpuanim = new System.Windows.Forms.Button();
             this.nudeksi = new System.Windows.Forms.NumericUpDown();
             this.lbleksi = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudio)).BeginInit();
@@ -90,15 +88,6 @@
             0,
             0});
             // 
-            // btnYanlis
-            // 
-            this.btnYanlis.Location = new System.Drawing.Point(159, 240);
-            this.btnYanlis.Name = "btnYanlis";
-            this.btnYanlis.Size = new System.Drawing.Size(75, 23);
-            this.btnYanlis.TabIndex = 6;
-            this.btnYanlis.Text = "Yanlış";
-            this.btnYanlis.UseVisualStyleBackColor = true;
-            // 
             // nudPuanim
             // 
             this.nudPuanim.Location = new System.Drawing.Point(19, 204);
@@ -114,15 +103,6 @@
             this.lblPuanim.Size = new System.Drawing.Size(60, 13);
             this.lblPuanim.TabIndex = 8;
             this.lblPuanim.Text = "Artı Puanım";
-            // 
-            // btnpuanim
-            // 
-            this.btnpuanim.Location = new System.Drawing.Point(159, 280);
-            this.btnpuanim.Name = "btnpuanim";
-            this.btnpuanim.Size = new System.Drawing.Size(75, 23);
-            this.btnpuanim.TabIndex = 9;
-            this.btnpuanim.Text = "Doğrula";
-            this.btnpuanim.UseVisualStyleBackColor = true;
             // 
             // nudeksi
             // 
@@ -147,10 +127,8 @@
             this.ClientSize = new System.Drawing.Size(244, 305);
             this.Controls.Add(this.lbleksi);
             this.Controls.Add(this.nudeksi);
-            this.Controls.Add(this.btnpuanim);
             this.Controls.Add(this.lblPuanim);
             this.Controls.Add(this.nudPuanim);
-            this.Controls.Add(this.btnYanlis);
             this.Controls.Add(this.nudio);
             this.Controls.Add(this.btnio);
             this.Controls.Add(this.lblAciklama);
@@ -171,10 +149,8 @@
         private System.Windows.Forms.Label lblAciklama;
         private System.Windows.Forms.Button btnio;
         private System.Windows.Forms.NumericUpDown nudio;
-        private System.Windows.Forms.Button btnYanlis;
         private System.Windows.Forms.NumericUpDown nudPuanim;
         private System.Windows.Forms.Label lblPuanim;
-        private System.Windows.Forms.Button btnpuanim;
         private System.Windows.Forms.NumericUpDown nudeksi;
         private System.Windows.Forms.Label lbleksi;
     }

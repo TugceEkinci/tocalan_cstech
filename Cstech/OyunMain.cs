@@ -31,39 +31,54 @@ namespace Cstech
 
         private void btnio_Click(object sender, EventArgs e)
         {
-            if (oyunsira == 1)
+            try
             {
-                int val = Convert.ToInt32(nudio.Value);
-                if (val<1233 || val>9876)
+                if (oyunsira == 1)
                 {
-                    MessageBox.Show("Sayı doğru aralıklarda değil. Lütfen rakamları farklı 4 basamaklı sayı giriniz.");
-                    return;
-                }
-                kulsira();
-                oyunsira = 2;
-                ekranhazirla(2);
-                nudio.Value = Convert.ToDecimal(sayisoyle(null));
+                    int val = Convert.ToInt32(nudio.Value);
+                    if (val < 1233 || val > 9876)
+                    {
+                        MessageBox.Show("Sayı doğru aralıklarda değil. Lütfen rakamları farklı 4 basamaklı sayı giriniz.");
+                        return;
+                    }
+                    kulsira();
+                    oyunsira = 2;
+                    ekranhazirla(2);
+                    nudio.Value = Convert.ToDecimal(sayisoyle(null));
 
 
-            }
-            else
-            {
-
-                if (nudPuanim.Value == 4)
-                {
-                    MessageBox.Show("Kazandım");
                 }
                 else
                 {
-                    int deger = Convert.ToInt32(nudio.Value);
-                    int eksideger = Convert.ToInt32(nudeksi.Value);
-                    int artideger = Convert.ToInt32(nudPuanim.Value);
-                    string a = deger.ToString().Substring(0, 1) + deger.ToString().Substring(2);
-                    kombinasyoncikar(deger, eksideger, artideger);
-                    oyunsira = 1;
-                    ekranhazirla(1);
 
+                    if (nudPuanim.Value == 4)
+                    {
+                        MessageBox.Show("Kazandım");
+                        Application.Restart();
+                    }
+                    else
+                    {
+                        int deger = Convert.ToInt32(nudio.Value);
+                        int eksideger = Math.Abs(Convert.ToInt32(nudeksi.Value));
+                        
+                        int artideger = Math.Abs(Convert.ToInt32(nudPuanim.Value));
+                        if ( eksideger>4 || artideger>4)
+                        {
+                            MessageBox.Show("4 den büyük puan veremezsiniz.");
+                            return;
+                        }
+                        string a = deger.ToString().Substring(0, 1) + deger.ToString().Substring(2);
+                        kombinasyoncikar(deger, eksideger, artideger);
+                        oyunsira = 1;
+                        ekranhazirla(1);
+
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                Application.Restart();
             }
 
 
@@ -281,6 +296,7 @@ namespace Cstech
             if (ornekuzay.Count<=0)
             {
                 MessageBox.Show("Olası bir sayı kalmadı sayıdan emin misiniz?");
+                Application.Restart();
                 return;
             }
             for (int i = 0; i < basamaksayisi; i++)
@@ -370,8 +386,7 @@ namespace Cstech
                 nudPuanim.Value = 0;
                 lblPuanim.Visible = false;
                 nudPuanim.Visible = false;
-                btnpuanim.Visible = false;
-                btnYanlis.Visible = false;
+                
                 nudeksi.Visible = false;
                 lbleksi.Visible = false;
             }
@@ -383,7 +398,7 @@ namespace Cstech
                 btnio.Text = "Doğru";
                 lblPuanim.Visible = true;
                 nudPuanim.Visible = true;
-                //btnpuanim.Visible = true;
+                
                 nudeksi.Visible = true;
                 lbleksi.Visible = true;
             }
