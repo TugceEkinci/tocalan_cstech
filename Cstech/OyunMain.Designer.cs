@@ -134,7 +134,7 @@
             this.Controls.Add(this.lblAciklama);
             this.Controls.Add(this.lblSira);
             this.Name = "OyunMain";
-            this.Text = "OyunMain";
+            this.Text = "Tahmin Oynu";
             this.Load += new System.EventHandler(this.OyunMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPuanim)).EndInit();

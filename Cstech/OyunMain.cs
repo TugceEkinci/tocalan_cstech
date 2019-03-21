@@ -11,6 +11,7 @@ namespace Cstech
 {
     public partial class OyunMain : Form
     {
+        bool oyunbasladi=false;
         int oyunsira;
         int tutulansayi = 0;
         int basamaksayisi = 4;
@@ -23,6 +24,11 @@ namespace Cstech
         
         private void OyunMain_Load(object sender, EventArgs e)
         {
+            if (!oyunbasladi)
+            {
+                MessageBox.Show("Rakamları farklı 4 basamaklı bir sayı tuttum senden onu tahmin etmeni istiyorum. Aynı şekilde sende bir sayı tut bende onu tahmin edeceğim.");
+                oyunbasladi = true;
+            }
             ekranhazirla(1);
             ornekuzayolustur();
             oyunsira = 1;
