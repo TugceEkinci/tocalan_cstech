@@ -1,0 +1,10 @@
+C:\Users\t_oca\source\repos\Cstech\Cstech\bin\Debug\Cstech.exe
+C:\Users\t_oca\source\repos\Cstech\Cstech\bin\Debug\Cstech.pdb
+C:\Users\t_oca\source\repos\Cstech\Cstech\obj\Debug\Cstech.csprojAssemblyReference.cache
+C:\Users\t_oca\source\repos\Cstech\Cstech\obj\Debug\Cstech.Form1.resources
+C:\Users\t_oca\source\repos\Cstech\Cstech\obj\Debug\Cstech.OyunMain.resources
+C:\Users\t_oca\source\repos\Cstech\Cstech\obj\Debug\Cstech.Properties.Resources.resources
+C:\Users\t_oca\source\repos\Cstech\Cstech\obj\Debug\Cstech.csproj.GenerateResource.cache
+C:\Users\t_oca\source\repos\Cstech\Cstech\obj\Debug\Cstech.csproj.CoreCompileInputs.cache
+C:\Users\t_oca\source\repos\Cstech\Cstech\obj\Debug\Cstech.exe
+C:\Users\t_oca\source\repos\Cstech\Cstech\obj\Debug\Cstech.pdb
